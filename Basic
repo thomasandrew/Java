@@ -1,0 +1,89 @@
+class main {
+
+private int k;
+public  int g;
+protected int q;
+
+  public static void main(String[] args) {
+    //To print
+    System.out.println("Hello world!");
+    System.out.print("i am Thomas");
+    System.out.println(" yea");
+    
+    // variables
+    int a=5;
+    char b='i';
+    long c=400;
+    double d=2.1;
+    boolean e= true;
+    //String
+    String name="Thomas";
+    System.out.println(name.toUpperCase());
+
+    int i, o, z;
+    int x=0, w=10;
+
+    //Basic arithimatics
+    System.out.println(a+b);
+    int h=9,t=8;
+    int answer = h + t;
+
+    System.out.println(answer); 
+    h=h+8;
+    System.out.println(h);
+
+   //Array
+   int thomas[]=new int[10];
+       
+     thomas[0]=38;
+     thomas[1]=29;
+     thomas[9]=10; 
+
+   System.out.println(thomas[9]);
+   
+   int thomas2[]={2,3,4,5};
+
+   System.out.println(thomas2[3]);
+   
+   int le=9,lb=10;
+
+    int arrayAname[]={le, lb};
+    System.out.println(le);
+
+  //If statemant
+
+   int chocolate =10, goma= 10;
+
+   if(chocolate < goma){
+     System.out.println("Thomas e lindo demais");
+   }   
+
+   else if(chocolate == goma){
+     System.out.println("Thomas continua sendo lindo");
+   } 
+  
+   else{
+     System.out.println("Thomas sempre vai ser lindo");
+   }
+   // i gotta go back to if statemant to check how to compare strings
+   
+   //loops
+   while(a > 0){
+     System.out.print(a);
+     System.out.println(" Thomas e lindo");
+     a--;
+   }
+   
+   for(int th=0; th<5;th++){
+     System.out.println("Thomas sempre sera lindo");
+   }
+   
+      
+
+  }
+  
+
+ 
+
+}
+   
