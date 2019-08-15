@@ -4,19 +4,34 @@ public class Main {
 
     public static void main(String[] args) {
 
+        String mystring = "This is a string";
+        System.out.println("string: "+ mystring);
 
-                byte newbyte = 100;
-                short newshort = 30000;
-                int newint = 1000;
-                long newlong = 50000L + 10L * (newbyte + newshort + newint);
-                System.out.println("Result: "+newlong);
+        mystring = mystring + ", string is very cool";
+        System.out.println(mystring);
 
-                //is not part of the exercise
+        //unicode
 
-                short myshort = (short)(1000 + 10 * (newbyte + newshort + newint));
-                System.out.println(myshort);
+        mystring = mystring + "\u00A9 2019";
+        System.out.println(mystring);
+
+        //string numbers
+
+        String numberstring = "250.55";
+        numberstring = numberstring + "49.95";
+        System.out.println(numberstring);
+
+        String laststring = "10";
+        int myint = 50;//vai ser tratado como uma string
+
+        laststring = laststring + myint;
+        System.out.println("laststring: "+laststring);
+
+        double doublestringLoL = 120.47d;//tambem e tratado como uma string
+        laststring = laststring + doublestringLoL;
+        System.out.println("laststring float: "+ laststring);
 
 
 
-      }
     }
+}
