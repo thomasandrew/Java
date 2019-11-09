@@ -1,6 +1,6 @@
 package com.company;
 
-public class Main {
+public class while_and_dowhile_statements {
 
     public static void main(String[] args) {
 	   int count = 1;
@@ -41,15 +41,36 @@ public class Main {
 
         System.out.println();
 
-        int number = 4;
-        int finishnumber = 20;
-        while (number <= finishnumber) {
-            number++;
-            if (!isevennumber(number)) {
-                  continue;//It will continue even when the number is not even and it will not show the even numbers but it will continue it is kinda diferrent than break;
-            }
-            System.out.println("Even number: "+number);
-        }
+//        int number = 4;
+//        int finishnumber = 20;
+//        while (number <= finishnumber) {
+//            number++;
+//            if (!isevennumber(number)) {
+//                  continue;//It will continue even when the number is not even and it will not show the even numbers but it will continue it is kinda diferrent than break;
+//            }
+//            System.out.println("Even number: "+number);
+//        }
+
+       int number = 4;
+       int finishnumber = 20;
+       long cont = 0;
+       while (number <= finishnumber) {
+          number++;
+          if (!isevennumber(number)) {
+                continue;//Skipping numbers
+           }
+
+          System.out.println("even numbers: "+number);
+
+          cont++;
+
+          if (cont == 5) {
+              break;
+          }
+
+       }
+
+        System.out.println("the total of even numbers: "+cont);
     }
 
     public static boolean isevennumber(int num) {
