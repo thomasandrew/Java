@@ -10,5 +10,9 @@ public class Main {
 
         Car dog = new Car("Yorkie", 8, 20, 2, 4, 1, 20, "long silky");
         dog.eat();
+        dog.walk();
+        dog.run();
     }
 }
+
+
