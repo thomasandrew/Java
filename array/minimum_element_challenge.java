@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Array;
+import java.util.Arrays;
 
 class Main {
 
@@ -11,6 +11,9 @@ class Main {
     scanner.nextLine();
 
     int[] returnedArray = readIntegers(count);
+    int returnedMin = findMin(returnedArray);
+
+    System.out.println("min = " + returnedMin);
   }
 
   private static int[] readIntegers(int count) {
@@ -25,5 +28,20 @@ class Main {
     }
 
     return array;
+  }
+
+  public static int findMin(int[] array) {
+
+    int min = Integer.MAX_VALUE; // array[0] works too.
+
+    for (int i = 0; i < array.length; i++) {
+      int value = array[i];
+
+      if (value < min) {
+          min = value;
+      }
+    }
+
+    return min;
   }
 }
