@@ -25,7 +25,7 @@ class Main {
     System.out.println(cars);
 
     // Remove all elements
-    // cars.clear();
+    cars.clear();
     System.out.println(cars);
 
     // To find out how m many elements an ArrayList have
