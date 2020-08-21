@@ -6,6 +6,10 @@ public class GroceryList {
   public void addGroceryItem(String item) {
     groceryList.add(item);
   }
+  
+  public ArrayList<String> getGroceryList() {
+    return groceryList;
+  }
 
   public void printGroceryList() {
     System.out.println("You have " + groceryList.size() + " items in your grocery list");
@@ -23,7 +27,7 @@ public class GroceryList {
 
   private void modifyGroceryItem(int position, String newItem) {
     groceryList.set(position, newItem);
-    System.out.println("Grocery item " + (position + 1));
+    System.out.println("Grocery item " + (position + 1) + " has been modified.");
   }
 
   public void removeGroceryItem(String item) {
